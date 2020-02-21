@@ -1,0 +1,20 @@
+//This one works but gets stuck sometimes
+var butts = document.getElementsByClassName("_3-9a");
+for(var i=0;i<butts.length;i++)
+{
+  butts[i].click();
+  document.getElementsByClassName("layerConfirm")[0].click();
+}
+
+//
+//Working on scrolling version below as a possible fix
+//
+
+var butts = document.getElementsByClassName("_3-9a");
+var scrollbar = document.getElementsByClassName("uiScrollableArea")[0];
+for(var i=0;i<butts.length;i++)
+{
+  butts[i].click();
+  document.getElementsByClassName("layerConfirm")[0].click();
+  scrollbar.scroll(0,55);
+}
